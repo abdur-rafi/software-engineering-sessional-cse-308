@@ -1,14 +1,10 @@
 package QMS.Controllers;
 
-public class ControllerFactory {
-    private static ControllerFactory factory = new ControllerFactory();
-    private ControllerFactory(){
+import QMS.AbstractFactory;
 
-    }
-    public static ControllerFactory getFactory(){
-        return factory;
-    }
+public class ControllerFactory extends AbstractFactory {
 
+    @Override
     public Controller getController(String type){
         if(type.equalsIgnoreCase("Atmega")){
             return new ATMega32();

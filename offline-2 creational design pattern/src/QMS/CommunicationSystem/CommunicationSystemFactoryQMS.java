@@ -1,17 +1,10 @@
 package QMS.CommunicationSystem;
 
-public class CommunicationSystemFactory {
+import QMS.AbstractFactory;
 
-    private static CommunicationSystemFactory factory = new CommunicationSystemFactory();
+public class CommunicationSystemFactory extends AbstractFactory {
 
-    public static CommunicationSystemFactory getFactory(){
-        return factory;
-    }
-
-    private CommunicationSystemFactory(){
-
-    }
-
+    @Override
     public CommunicationSystem getCommunicationSystem(String type){
         if(type.equalsIgnoreCase("sim")){
             return new SIM();

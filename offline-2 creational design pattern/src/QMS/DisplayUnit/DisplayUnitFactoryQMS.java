@@ -1,15 +1,10 @@
 package QMS.DisplayUnit;
 
-public class DisplayUnitFactory {
+import QMS.AbstractFactory;
 
-    private static DisplayUnitFactory factory = new DisplayUnitFactory();
-    private DisplayUnitFactory(){
+public class DisplayUnitFactory extends AbstractFactory {
 
-    }
-    public static DisplayUnitFactory getFactory(){
-        return factory;
-    }
-
+    @Override
     public DisplayUnit getDisplayUnit(String type){
         if(type.equalsIgnoreCase("lcd"))
             return new LCD();
