@@ -12,5 +12,10 @@ public class VeggiBurger implements Burger {
     public double cost() {
         return 60;
     }
+    @Override
+    public boolean appetizerAdded() {
+        return false;
+    }
+
 }
 

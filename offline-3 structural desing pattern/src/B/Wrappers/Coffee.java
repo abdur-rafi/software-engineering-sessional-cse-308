@@ -18,5 +18,9 @@ public class Coffee extends BurgerWrapper {
     public double cost() {
         return burger.cost() + coffeeCost;
     }
+    @Override
+    public boolean appetizerAdded() {
+        return burger.appetizerAdded();
+    }
 }
 

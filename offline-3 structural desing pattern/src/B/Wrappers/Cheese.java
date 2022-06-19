@@ -18,4 +18,9 @@ public class Cheese extends BurgerWrapper {
     public double cost() {
         return burger.cost() + cheeseCost;
     }
+    @Override
+    public boolean appetizerAdded() {
+        return burger.appetizerAdded();
+    }
+
 }

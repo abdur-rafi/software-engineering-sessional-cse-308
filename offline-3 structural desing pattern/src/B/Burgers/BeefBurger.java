@@ -12,4 +12,10 @@ public class BeefBurger implements Burger {
     public double cost() {
         return 120;
     }
+
+    @Override
+    public boolean appetizerAdded() {
+        return false;
+    }
+
 }

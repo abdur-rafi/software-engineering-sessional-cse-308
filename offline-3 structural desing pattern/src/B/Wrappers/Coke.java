@@ -20,5 +20,9 @@ public class Coke extends BurgerWrapper {
     public double cost() {
         return burger.cost() + cokeCost;
     }
+    @Override
+    public boolean appetizerAdded() {
+        return burger.appetizerAdded();
+    }
 }
 

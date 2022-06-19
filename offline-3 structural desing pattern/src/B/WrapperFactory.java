@@ -4,7 +4,7 @@ import B.Wrappers.*;
 
 public class WrapperFactory {
 
-    public BurgerWrapper getWrapper(Burger b, WrapperType type){
+    public BurgerWrapper getWrapper(Burger b, WrapperType type) throws MultipleAppetizer {
         if(type == WrapperType.Cheese)
             return new Cheese(b);
         else if(type == WrapperType.Coffee)

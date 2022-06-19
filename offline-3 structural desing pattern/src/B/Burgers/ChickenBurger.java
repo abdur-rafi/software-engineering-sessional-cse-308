@@ -12,4 +12,9 @@ public class ChickenBurger implements Burger {
     public double cost() {
         return 80;
     }
+    @Override
+    public boolean appetizerAdded() {
+        return false;
+    }
+
 }

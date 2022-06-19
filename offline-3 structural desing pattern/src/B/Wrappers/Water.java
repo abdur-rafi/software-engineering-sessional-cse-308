@@ -19,5 +19,9 @@ public class Water extends BurgerWrapper {
     public double cost() {
         return burger.cost() + waterCost;
     }
+    @Override
+    public boolean appetizerAdded() {
+        return burger.appetizerAdded();
+    }
 }
 
